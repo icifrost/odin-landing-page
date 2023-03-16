@@ -7,7 +7,8 @@ body{
 .card,
 .quote,
 .header,
-.footer{
+.footer,
+nav{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +28,10 @@ body{
 .header-content{
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .header-content div{
-    max-width: 400px;
+    width: 400px;
 }
 .logo{
     font-size: 24px;
@@ -41,8 +43,11 @@ nav{
     height: 42px;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #1f2937;
+    color: white;
 }
-nav,
+
 .quote div,
 .call-to-action{
     max-width: 816px;
@@ -54,7 +59,15 @@ nav ul{
     margin: 0px;
     padding: 0px;
 }
+.image{
+    background-color: #e5e7ebc1;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 .footer{
     align-items: center;
     height: 50px;
@@ -82,6 +95,10 @@ h2{
     background-color: #e5e7eb;
     flex-shrink: 1;
     padding: 60px;
+}
+.author{
+    font-weight: bold;
+    align-items: flex-end;
 }
 .item{
     display: flex;
